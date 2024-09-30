@@ -98,12 +98,12 @@ You will be assessed based on the sections you complete, with the difficulty lev
 
 ### **Frontend (20 points)**:
 - Functionality and usability (10 points)
-- Code quality and structure (5 points)
+- Code quality and structure (10 points)
 - Bonus: TypeScript usage (5 points)
 
 ### **Backend (20 points)**:
 - API functionality (10 points)
-- Code structure and error handling (5 points)
+- Code structure and error handling (10 points)
 - Bonus: Caching and database (5 points)
 
 ### **Smart Contract (20 points)**:
