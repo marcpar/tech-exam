@@ -47,6 +47,14 @@ services:
     container_name: eth-redis
     ports:
       - "6379:6379"
-
+  smart-contract:
+    build: ./smart-contract
+    container_name: eth-contract
+    volumes:
+      - ./smart-contract:/app
+    working_dir: /app
+    command: npx hardhat node
+    ports:
+      - "8545:8545"
 volumes:
   mongo_data:

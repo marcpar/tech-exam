@@ -1,0 +1,22 @@
+FROM node:18
+
+# Set working directory
+WORKDIR /app
+
+# Copy package and lock files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy rest of the project
+COPY . .
+
+# Install Hardhat globally for convenience (optional)
+RUN npm install -g hardhat
+
+# Expose port (optional if you're using localhost for Hardhat)
+EXPOSE 8545
+
+# Default command
+CMD ["npx", "hardhat", "node"]
