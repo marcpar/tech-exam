@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                          // Support modern JS features
+    "module": "CommonJS",                        // Node.js module system (can be "ESNext" if using ESM)
+    "moduleResolution": "node",                  // Resolve modules like Node.js
+    "esModuleInterop": true,                     // Allow default imports from CJS modules
+    "forceConsistentCasingInFileNames": true,    // Catch incorrect import casing
+    "strict": true,                              // Enable all strict type checks
+    "skipLibCheck": true,                        // Skip type checking for node_modules
+    "outDir": "./dist",                          // Output directory for compiled JS
+    "rootDir": "./src",                          // Where your TS source code lives
+    "resolveJsonModule": true,                   // Allow importing JSON files
+    "types": ["node"],                           // Enable Node.js type declarations
+    "noImplicitAny": true                        // Catch undeclared/implicit types
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
